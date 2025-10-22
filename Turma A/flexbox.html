@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Flexbox - Aula de CSS</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox - Aula de CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
 
-        <header>
-            <h1>Flexbox - Aula de CSS</h1>
-            <a href="index.html">⬅ Voltar ao Hub</a>
-        </header>
+  <header>
+    <h1>Flexbox - Aula de CSS</h1>
+    <a href="index.html">⬅ Voltar ao Hub</a>
+  </header>
 
+  <main>
 
-        <main>
+    <section>
+      <h2>O que é o Flexbox?</h2>
+      <p>
+        O <code>Flexbox</code> (Flexible Box Layout) é um modelo de layout unidimensional no CSS que facilita o alinhamento, distribuição e espaçamento dos elementos dentro de um contêiner.
+      </p>
+      <p>Ele é ideal para organizar elementos em linha (<code>row</code>) ou em coluna (<code>column</code>), e se adapta bem a diferentes tamanhos de tela.</p>
+    </section>
 
-            <section>
-                <h2>O que é Flexbox?</h2>
-                <p>
-                    A propriedade <code>Flexbox</code> é uma nova tecnologia, mas com suporte bastante difundido entre navegadores, o <code>Flexbox</code> está se tornando apto para uso geral. <code>Flexbox</code> provê ferramentas para criação rápida de layouts complexos e flexíveis.
-                </p>
-                <p>Os principais valores do <code>Flexbox</code> são:</p>
-                <ul>
-                    <li><strong>display: flex;</strong> — ativa o modelo flexível no contêiner;</li>
-                    <li><strong>flex-direction:</strong> — define a direção dos itens (row, column);</li>
-                    <li><strong>justify-content:</strong> — alinha horizontalmente (center, space-between...);</li>
-                    <li><strong>align-items:</strong> — alinha verticalmente (center, flex-start...);</li>
-                    <li><strong>flex-wrap:</strong> — permite que os itens quebrem linha se necessário.</li>
-                </ul>
-            </section>
+    <section>
+      <h2>Propriedades Principais</h2>
+      <ul>
+        <li><strong>display: flex;</strong> — ativa o modelo flexível no contêiner;</li>
+        <li><strong>flex-direction:</strong> — define a direção dos itens (row, column);</li>
+        <li><strong>justify-content:</strong> — alinha horizontalmente (center, space-between...);</li>
+        <li><strong>align-items:</strong> — alinha verticalmente (center, flex-start...);</li>
+        <li><strong>flex-wrap:</strong> — permite que os itens quebrem linha se necessário.</li>
+      </ul>
+    </section>
 
-            <section>
-                <h2>Exemplos Visuais</h2>
+    <section>
+      <h2>Exemplo Visual</h2>
 
-                <p><strong>Display: flex;</strong> com itens distribuidos igualmente</p>
-                <div class="flex-container exemplo1">
-                    <div class="item">1</div>
-                    <div class="item">2</div>
-                    <div class="item">3</div>
-                </div>
+      <p><strong>display: flex;</strong> com itens distribuídos igualmente:</p>
+      <div class="flex-container exemplo1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
 
-                <p><strong>justify-content: space-between;</strong> — espaçamento igual entre os itens:</p>
-                    <div class="flex-container exemplo2">
-                    <div class="item">A</div>
-                    <div class="item">B</div>
-                    <div class="item">C</div>
-                </div>
+      <p><strong>justify-content: space-between;</strong> — espaçamento igual entre os itens:</p>
+      <div class="flex-container exemplo2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+      </div>
 
-                <p><strong>align-items: center;</strong> — centraliza os itens verticalmente:</p>
-                    <div class="flex-container exemplo3">
-                    <div class="item alto">X</div>
-                    <div class="item">Y</div>
-                    <div class="item">Z</div>
-                </div>
-            </section>
+      <p><strong>align-items: center;</strong> — centraliza os itens verticalmente:</p>
+      <div class="flex-container exemplo3">
+        <div class="item alto">X</div>
+        <div class="item">Y</div>
+        <div class="item">Z</div>
+      </div>
+    </section>
 
-            <section class="teste-css">
-            <h2>Área de Testes</h2>
-                <p>Modifique o arquivo <strong>flexbox.css</strong> e teste diferentes propriedades de Flexbox abaixo.</p>
-                    <div class="teste-container">
-                    <div class="caixa caixa1">.caixa1</div>
-                    <div class="caixa caixa2">.caixa2</div>
-                    <div class="caixa caixa3">.caixa3</div>
-                </div>
-            </section>
-        </main>
-        
-                <footer>
+    <section class="teste-css">
+      <h2>🧩 Área de Testes</h2>
+      <p>Modifique o arquivo <strong>flexbox.css</strong> e teste diferentes propriedades de Flexbox abaixo.</p>
+
+      <div class="teste-container">
+        <div class="caixa caixa1">.caixa1</div>
+        <div class="caixa caixa2">.caixa2</div>
+        <div class="caixa caixa3">.caixa3</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
     <p>Desenvolvido por Prof. Dionatan Inhoato Markiu — © 2025</p>
-                </footer>
-            </section>
-        </main>
-    </body>
+  </footer>
+
+</body>
 </html>
