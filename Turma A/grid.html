@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conceitos de Grid Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Grid Layout</h1>
+    <nav>
+      <a href="index.html">Voltar ao inicio</a>
+    </nav>
+  </header>
+
+  <main>
+  <section>
+    <h2>O que é CSS Grid?</h2>
+    <p>
+      O <strong>CSS Grid Layout</strong> é um sistema de layout bidimensional que organiza
+      elementos em <strong>linhas e colunas</strong>. 
+      Ele é ideal para criar páginas completas, grades de imagens, dashboards e estruturas complexas com controle total do espaço.
+    </p>
+  </section>
+
+  <section>
+    <h2>Como funciona</h2>
+    <p>
+      Para usar o Grid, aplicamos <code>display: grid;</code> no container e definimos o número
+      e o tamanho das colunas e linhas com as propriedades <code>grid-template-columns</code> e <code>grid-template-rows</code>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Propriedades principais</h2>
+    <ul>
+      <li><code>display: grid;</code> — ativa o layout de grade.</li>
+      <li><code>grid-template-columns</code> — define quantas colunas e seus tamanhos.</li>
+      <li><code>grid-template-rows</code> — define quantas linhas e seus tamanhos.</li>
+      <li><code>gap</code> — define o espaçamento entre os elementos.</li>
+      <li><code>justify-items</code> e <code>align-items</code> — alinham os itens dentro das células.</li>
+      <li><code>grid-template-areas</code> — permite nomear áreas da grade para layouts mais organizados.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Exemplo básico</h2>
+    <p>Exemplo de grade simples com 3 colunas e 2 linhas:</p>
+
+    <div class="grid-demo">
+      <div class="cell">A</div>
+      <div class="cell">B</div>
+      <div class="cell">C</div>
+      <div class="cell">D</div>
+      <div class="cell">E</div>
+      <div class="cell">F</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Exemplo avançado (áreas nomeadas)</h2>
+    <p>Veja abaixo um layout de página usando Grid com áreas nomeadas:</p>
+
+    <div class="grid-layout">
+      <header>Header</header>
+      <nav>Conteúdo principal</nav>
+      <aside>Barra lateral</aside>
+      <footer>Rodapé</footer>
+    </div>
+  </section>
+
+  <section>
+    <h2>Dica útil</h2>
+    <p>
+      Use o CSS Grid para criar o layout geral da página e o Flexbox dentro das seções
+      (como cards ou menus). Eles se complementam muito bem.
+    </p>
+  </section>
+</main>
+
+
+  <footer>
+    <p>© 2025 Hub CSS</p>
+  </footer>
+</body>
+</html>
